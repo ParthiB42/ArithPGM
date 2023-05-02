@@ -1,9 +1,3 @@
-      ******************************************************************
-      * Author:
-      * Date:
-      * Purpose:
-      * Tectonics: cobc
-      ******************************************************************
        IDENTIFICATION DIVISION.
        PROGRAM-ID. ArithPGM.
        DATA DIVISION.
@@ -18,7 +12,7 @@
            ACCEPT WS-A.
            DISPLAY "PLEASE ENTER THE B VALUE"
            ACCEPT WS-B.
-           ADD WS-A , WS-B GIVING WS-D.
+           SUBTRACT WS-A FROM WS-B GIVING WS-D.
            DISPLAY "THE TOTAL OF A + B IS :" WS-D.
            STOP RUN.
        END PROGRAM ArithPGM.
