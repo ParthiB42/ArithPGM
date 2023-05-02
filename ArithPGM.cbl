@@ -23,7 +23,9 @@
 
            IF WS-OPE = '*' THEN
                MULTIPLY WS-A BY WS-B GIVING WS-C.
+           IF WS-OPE = '%' THEN
+               DIVIDE WS-A BY WS-B GIVING WS-C.
 
-           DISPLAY "THE TOTAL OF A + B IS :" WS-C.
+           DISPLAY "THE RESULT :" WS-C.
            STOP RUN.
        END PROGRAM ArithPGM.
